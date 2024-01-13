@@ -1,0 +1,9 @@
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/lambda.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/package.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/package_source.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/edit_cache.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/rebuild_cache.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/list_install_components.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/install.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/install/local.dir
+/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles/install/strip.dir

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/sasha/source/OtusCC/OtusAutoLambda/build",
+  "command": "/usr/bin/g++  -I/home/sasha/source/OtusCC/OtusAutoLambda/build -g -Wall -Wextra -pedantic -Werror -std=gnu++14 -o CMakeFiles/lambda.dir/lambda.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp",
+  "file": "/home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp"
+}
+]
