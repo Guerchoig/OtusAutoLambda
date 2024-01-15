@@ -1,6 +1,7 @@
 #include <string>
 #include <tuple>
 #include <cassert>
+#include <iostream>
 auto getPerson() {
  const std::string name = "Petia";
  const std::string secondName = "Ivanoff";
@@ -15,6 +16,8 @@ std::tuple<std::string&, std::string&, size_t&, std::string&> custom_tie(std::st
  return {name, secondName, age, department };
 }
 
+
+
 int main(void) {
  std::string name, secondName, department;
  std::size_t age;
@@ -23,5 +26,6 @@ int main(void) {
  assert(secondName == "Ivanoff");
  assert(age == 23);
  assert(department == "Sale");
+ std::cout << name << "\n" << secondName<< "\n" << age<< "\n" << department<< "\n";
  return 0;
 }
