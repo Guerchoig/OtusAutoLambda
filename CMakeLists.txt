@@ -1,74 +1,29 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 
-set(PATCH_VERSION "0" CACHE INTERNAL "Patch version")
-set(PROJECT_VESRION 0.0.${PATCH_VERSION})
+project(02.cpp11and14 CXX)
 
-project(lambda VERSION ${PROJECT_VESRION})
+set(CMAKE_CXX_CLANG_TIDY clang-tidy -warnings-as-errors=*)
 
-# find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+file(GLOB SRC_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
 
-#configure_file(version.h.in version.h)
+foreach(src_file ${SRC_FILES})
+    get_filename_component(target ${src_file} NAME_WLE)
+    add_executable(${target} ${src_file})
+    list(APPEND TARGETS ${target})
+    message("Target added: \"${target}\".")
+endforeach(src_file ${SRC_FILES})
 
-add_executable(lambda lambda.cpp)
-#add_library(helloworld lib.cpp)
-#add_executable(test_version test_version.cpp)
+foreach(target ${TARGETS})
+    target_compile_features(${target} PUBLIC cxx_std_14)
+    set_target_properties(${target} PROPERTIES CXX_STANDARD_REQUIRED ON)
 
-set_target_properties(lambda PROPERTIES
-    CXX_STANDARD 14
-    CXX_STANDARD_REQUIRED ON
-)
-target_include_directories(lambda
-    PRIVATE "${CMAKE_BINARY_DIR}"
-)
-# set_target_properties(test_version PROPERTIES
-#     COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
-#     INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
-# )
-
-# target_link_libraries(helloworld_cli PRIVATE
-#     helloworld
-# )
-# target_link_libraries(test_version
-#     ${Boost_LIBRARIES}
-#     helloworld
-# )
-
-if (MSVC)
-    target_compile_options(lambda PRIVATE
-        /W4
-    )
-    # target_compile_options(helloworld PRIVATE
-    #     /W4
-    # )
-    # target_compile_options(test_version PRIVATE
-    #     /W4
-    # )
-else ()
-    target_compile_options(lambda PRIVATE
-        -Wall -Wextra -pedantic -Werror
-    )
-    # target_compile_options(helloworld PRIVATE
-    #     -Wall -Wextra -pedantic -Werror
-    # )
-    # target_compile_options(test_version PRIVATE
-    #     -Wall -Wextra -pedantic -Werror
-    # )
-endif()
-
-
-
-install(TARGETS lambda RUNTIME DESTINATION bin)
-
-set(CPACK_GENERATOR DEB)
-
-set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
-set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
-set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
-
-set(CPACK_PACKAGE_CONTACT guerchoig@guerchoig.com)
-
-include(CPack)
-
-# enable_testing()
-
-# add_test(test_version test_version)
+    if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR
+        CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang" OR
+        CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
+        target_compile_options(${target}
+            PRIVATE -g -Wall -Wextra -Werror -pedantic)
+    elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+        target_compile_options(${target}
+            PRIVATE /W4 /WX)
+    endif()
+endforeach()
