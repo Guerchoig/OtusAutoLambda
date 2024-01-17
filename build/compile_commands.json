@@ -1,7 +1,22 @@
 [
 {
   "directory": "/home/sasha/source/OtusCC/OtusAutoLambda/build",
-  "command": "/usr/bin/g++  -I/home/sasha/source/OtusCC/OtusAutoLambda/build -g -Wall -Wextra -pedantic -Werror -std=gnu++14 -o CMakeFiles/lambda.dir/lambda.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp",
+  "command": "/usr/bin/g++   -g -g -Wall -Wextra -Werror -pedantic -o CMakeFiles/auto.dir/auto.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/auto.cpp",
+  "file": "/home/sasha/source/OtusCC/OtusAutoLambda/auto.cpp"
+},
+{
+  "directory": "/home/sasha/source/OtusCC/OtusAutoLambda/build",
+  "command": "/usr/bin/g++   -g -g -Wall -Wextra -Werror -pedantic -o CMakeFiles/decltype.dir/decltype.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/decltype.cpp",
+  "file": "/home/sasha/source/OtusCC/OtusAutoLambda/decltype.cpp"
+},
+{
+  "directory": "/home/sasha/source/OtusCC/OtusAutoLambda/build",
+  "command": "/usr/bin/g++   -g -g -Wall -Wextra -Werror -pedantic -o CMakeFiles/lambda.dir/lambda.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp",
   "file": "/home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp"
+},
+{
+  "directory": "/home/sasha/source/OtusCC/OtusAutoLambda/build",
+  "command": "/usr/bin/g++   -g -g -Wall -Wextra -Werror -pedantic -o CMakeFiles/tuple.dir/tuple.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/tuple.cpp",
+  "file": "/home/sasha/source/OtusCC/OtusAutoLambda/tuple.cpp"
 }
 ]

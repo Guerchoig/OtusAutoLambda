@@ -73,7 +73,7 @@ CMakeFiles/lambda.dir/lambda.cpp.o: CMakeFiles/lambda.dir/flags.make
 CMakeFiles/lambda.dir/lambda.cpp.o: ../lambda.cpp
 CMakeFiles/lambda.dir/lambda.cpp.o: CMakeFiles/lambda.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lambda.dir/lambda.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lambda.dir/lambda.cpp.o -MF CMakeFiles/lambda.dir/lambda.cpp.o.d -o CMakeFiles/lambda.dir/lambda.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp
+	$(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-warnings-as-errors=*;--extra-arg-before=--driver-mode=g++" --source=/home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp -- /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lambda.dir/lambda.cpp.o -MF CMakeFiles/lambda.dir/lambda.cpp.o.d -o CMakeFiles/lambda.dir/lambda.cpp.o -c /home/sasha/source/OtusCC/OtusAutoLambda/lambda.cpp
 
 CMakeFiles/lambda.dir/lambda.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lambda.dir/lambda.cpp.i"

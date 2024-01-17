@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+02.cpp11and14_BINARY_DIR:STATIC=/home/sasha/source/OtusCC/OtusAutoLambda/build
+
+//Value Computed by CMake
+02.cpp11and14_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+02.cpp11and14_SOURCE_DIR:STATIC=/home/sasha/source/OtusCC/OtusAutoLambda
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -144,7 +153,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=lambda
+CMAKE_PROJECT_NAME:STATIC=02.cpp11and14
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.0.0

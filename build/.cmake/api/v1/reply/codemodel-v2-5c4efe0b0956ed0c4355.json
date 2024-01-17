@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "02.cpp11and14",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "auto::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auto-Debug-041ee74d597986cbb019.json",
+					"name" : "auto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "decltype::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-decltype-Debug-e66b3731871a968c4149.json",
+					"name" : "decltype",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lambda::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lambda-Debug-da421ad273204f40936e.json",
+					"name" : "lambda",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tuple::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tuple-Debug-fd82111b6e6dca52cb66.json",
+					"name" : "tuple",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/sasha/source/OtusCC/OtusAutoLambda/build",
+		"source" : "/home/sasha/source/OtusCC/OtusAutoLambda"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

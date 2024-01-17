@@ -2,6 +2,42 @@
 	"entries" : 
 	[
 		{
+			"name" : "02.cpp11and14_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/sasha/source/OtusCC/OtusAutoLambda/build"
+		},
+		{
+			"name" : "02.cpp11and14_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "02.cpp11and14_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/sasha/source/OtusCC/OtusAutoLambda"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -835,7 +871,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "lambda"
+			"value" : "02.cpp11and14"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",

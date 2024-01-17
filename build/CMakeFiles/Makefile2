@@ -63,7 +63,10 @@ CMAKE_BINARY_DIR = /home/sasha/source/OtusCC/OtusAutoLambda/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/auto.dir/all
+all: CMakeFiles/decltype.dir/all
 all: CMakeFiles/lambda.dir/all
+all: CMakeFiles/tuple.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,8 +74,63 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/auto.dir/clean
+clean: CMakeFiles/decltype.dir/clean
 clean: CMakeFiles/lambda.dir/clean
+clean: CMakeFiles/tuple.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/auto.dir
+
+# All Build rule for target.
+CMakeFiles/auto.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto.dir/build.make CMakeFiles/auto.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto.dir/build.make CMakeFiles/auto.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles --progress-num=1,2 "Built target auto"
+.PHONY : CMakeFiles/auto.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/auto.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/auto.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles 0
+.PHONY : CMakeFiles/auto.dir/rule
+
+# Convenience name for target.
+auto: CMakeFiles/auto.dir/rule
+.PHONY : auto
+
+# clean rule for target.
+CMakeFiles/auto.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/auto.dir/build.make CMakeFiles/auto.dir/clean
+.PHONY : CMakeFiles/auto.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/decltype.dir
+
+# All Build rule for target.
+CMakeFiles/decltype.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decltype.dir/build.make CMakeFiles/decltype.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decltype.dir/build.make CMakeFiles/decltype.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles --progress-num=3,4 "Built target decltype"
+.PHONY : CMakeFiles/decltype.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/decltype.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/decltype.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles 0
+.PHONY : CMakeFiles/decltype.dir/rule
+
+# Convenience name for target.
+decltype: CMakeFiles/decltype.dir/rule
+.PHONY : decltype
+
+# clean rule for target.
+CMakeFiles/decltype.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/decltype.dir/build.make CMakeFiles/decltype.dir/clean
+.PHONY : CMakeFiles/decltype.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/lambda.dir
@@ -81,7 +139,7 @@ clean: CMakeFiles/lambda.dir/clean
 CMakeFiles/lambda.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles --progress-num=1,2 "Built target lambda"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles --progress-num=5,6 "Built target lambda"
 .PHONY : CMakeFiles/lambda.dir/all
 
 # Build rule for subdir invocation for target.
@@ -99,6 +157,32 @@ lambda: CMakeFiles/lambda.dir/rule
 CMakeFiles/lambda.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lambda.dir/build.make CMakeFiles/lambda.dir/clean
 .PHONY : CMakeFiles/lambda.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tuple.dir
+
+# All Build rule for target.
+CMakeFiles/tuple.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tuple.dir/build.make CMakeFiles/tuple.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tuple.dir/build.make CMakeFiles/tuple.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles --progress-num=7,8 "Built target tuple"
+.PHONY : CMakeFiles/tuple.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tuple.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tuple.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sasha/source/OtusCC/OtusAutoLambda/build/CMakeFiles 0
+.PHONY : CMakeFiles/tuple.dir/rule
+
+# Convenience name for target.
+tuple: CMakeFiles/tuple.dir/rule
+.PHONY : tuple
+
+# clean rule for target.
+CMakeFiles/tuple.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tuple.dir/build.make CMakeFiles/tuple.dir/clean
+.PHONY : CMakeFiles/tuple.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

@@ -11,10 +11,7 @@
 		"commands" : 
 		[
 			"add_executable",
-			"install",
-			"target_compile_options",
-			"target_include_directories",
-			"set_target_properties"
+			"target_compile_options"
 		],
 		"files" : 
 		[
@@ -28,31 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 12,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 60,
-				"parent" : 0
-			},
-			{
-				"command" : 2,
-				"file" : 0,
-				"line" : 47,
-				"parent" : 0
-			},
-			{
-				"command" : 3,
-				"file" : 0,
-				"line" : 20,
-				"parent" : 0
-			},
-			{
-				"command" : 4,
-				"file" : 0,
-				"line" : 16,
+				"line" : 23,
 				"parent" : 0
 			}
 		]
@@ -66,41 +45,27 @@
 					"fragment" : "-g"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
+					"fragment" : "-g"
+				},
+				{
+					"backtrace" : 2,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"fragment" : "-Wextra"
 				},
 				{
-					"backtrace" : 3,
-					"fragment" : "-pedantic"
-				},
-				{
-					"backtrace" : 3,
+					"backtrace" : 2,
 					"fragment" : "-Werror"
 				},
 				{
-					"fragment" : "-std=gnu++14"
-				}
-			],
-			"includes" : 
-			[
-				{
-					"backtrace" : 4,
-					"path" : "/home/sasha/source/OtusCC/OtusAutoLambda/build"
+					"backtrace" : 2,
+					"fragment" : "-pedantic"
 				}
 			],
 			"language" : "CXX",
-			"languageStandard" : 
-			{
-				"backtraces" : 
-				[
-					5
-				],
-				"standard" : "14"
-			},
 			"sourceIndexes" : 
 			[
 				0
@@ -108,20 +73,6 @@
 		}
 	],
 	"id" : "lambda::@6890427a1f51a3e7e1df",
-	"install" : 
-	{
-		"destinations" : 
-		[
-			{
-				"backtrace" : 2,
-				"path" : "bin"
-			}
-		],
-		"prefix" : 
-		{
-			"path" : "/usr/local"
-		}
-	},
 	"link" : 
 	{
 		"commandFragments" : 
